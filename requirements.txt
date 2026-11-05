@@ -1,4 +1,4 @@
-MetaTrader5==5.0.45
+MetaTrader5>=5.0.47
 pandas>=2.0.0
 pandas_ta>=0.3.14
 aiohttp>=3.9.0
