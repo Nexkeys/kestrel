@@ -1,0 +1,23 @@
+# EMA Crossover Strategy Configuration
+# BUY when fast EMA crosses above slow EMA, SELL on reverse crossover
+
+strategy: "EMA_Cross"
+enabled: true
+timeframe: "H1"
+
+# Which pairs to run this strategy on (must be in pairs.toml)
+symbols:
+  - "EURUSD"
+  - "GBPUSD"
+  - "USDJPY"
+  - "AUDUSD"
+
+# Risk per trade for this strategy (overrides global if set)
+risk_per_trade_pct: 1.0
+
+params:
+  fast_ema_period: 8
+  slow_ema_period: 21
+  # Minimum gap between EMAs as a percentage (0.0 - 5.0)
+  # Higher = stricter signals
+  min_signal_strength: 0.6

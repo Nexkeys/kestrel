@@ -1,0 +1,57 @@
+[scan]
+# How often (in seconds) the scanner runs across all pairs and strategies
+scan_interval = 60
+
+# Log level: DEBUG, INFO, WARNING, ERROR
+log_level = "INFO"
+
+[mt5]
+# Path to MT5 terminal executable (leave empty for default install location)
+terminal_path = ""
+# Connection timeout in milliseconds
+connection_timeout = 60000
+
+[risk]
+# Percentage of account equity risked per trade
+risk_per_trade_pct = 1.0
+# Maximum daily loss as a percentage of starting equity
+max_daily_loss_pct = 5.0
+# Maximum concurrent open positions
+max_open_positions = 5
+# Maximum total lot size across all open positions
+max_concurrent_lots = 0.5
+# Minimum risk:reward ratio to accept a signal
+min_risk_reward_ratio = 1.5
+# Position sizing mode: fixed_lot | fixed_risk
+sizing_mode = "fixed_risk"
+# Fixed lot size when sizing_mode = fixed_lot
+fixed_lot_size = 0.01
+
+[telegram]
+enabled = false
+# SECURITY: Set these via environment variables, NOT in this file.
+# export KESTREL_TELEGRAM_TOKEN="123456:ABC-DEF..."
+# export KESTREL_TELEGRAM_CHAT_ID="987654321"
+bot_token = ""
+chat_id = ""
+
+[webhook]
+enabled = false
+url = ""
+# SECURITY: Set via environment variable, NOT in this file.
+# export KESTREL_WEBHOOK_SECRET="your-hmac-secret"
+secret = ""
+
+[execution]
+# Maximum slippage in price points (broker-dependent, usually 1-5)
+max_slippage_points = 3
+# Number of times to retry a failed order
+retry_attempts = 3
+# Deviation in points for market orders
+order_deviation = 10
+
+[logging]
+# Log file path (leave empty to disable file logging)
+log_file = "kestrel.log"
+# Also log to stdout
+log_to_console = true

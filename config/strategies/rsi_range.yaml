@@ -1,0 +1,21 @@
+# RSI Range Strategy Configuration
+# BUY when RSI crosses above oversold level, SELL when RSI crosses below overbought
+
+strategy: "RSI_Range"
+enabled: true
+timeframe: "H1"
+
+symbols:
+  - "EURUSD"
+  - "GBPUSD"
+  - "USDCAD"
+  - "EURGBP"
+
+risk_per_trade_pct: 1.0
+
+params:
+  rsi_period: 14
+  # RSI level that signals oversold ( BUY zone )
+  oversold: 30.0
+  # RSI level that signals overbought ( SELL zone )
+  overbought: 70.0

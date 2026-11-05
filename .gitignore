@@ -1,0 +1,37 @@
+# Virtual environment
+venv/
+.venv/
+env/
+env.bak/
+
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+kestrel.log
+
+# Local overrides (keep app.toml.example, not app.toml)
+config/app.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets (never commit these)
+*.pem
+*.key
+.env

@@ -1,0 +1,70 @@
+# Major FX major and cross pairs
+[[pairs]]
+symbol = "EURUSD"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 30  # points (30 = 3.0 pips for 5-digit broker)
+
+[[pairs]]
+symbol = "GBPUSD"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 35
+
+[[pairs]]
+symbol = "USDJPY"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 25
+
+[[pairs]]
+symbol = "AUDUSD"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 35
+
+[[pairs]]
+symbol = "USDCAD"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 35
+
+[[pairs]]
+symbol = "NZDUSD"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 40
+
+[[pairs]]
+symbol = "EURGBP"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 30
+
+[[pairs]]
+symbol = "GBPJPY"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 50
+
+[[pairs]]
+symbol = "EURJPY"
+enabled = true
+min_lot = 0.01
+max_lot = 100.0
+spread_max = 35
+
+[[pairs]]
+symbol = "XAUUSD"  # Gold
+enabled = true
+min_lot = 0.01
+max_lot = 50.0
+spread_max = 50

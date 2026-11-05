@@ -1,0 +1,23 @@
+# Bollinger Bands Breakout Strategy Configuration
+# BUY when price closes above upper band with above-average volume
+
+strategy: "BB_Breakout"
+enabled: true
+timeframe: "H1"
+
+symbols:
+  - "XAUUSD"
+  - "GBPUSD"
+  - "EURJPY"
+
+risk_per_trade_pct: 1.0
+
+params:
+  bb_period: 20       # Period for Bollinger middle band SMA
+  bb_std: 2.0         # Standard deviations for upper/lower bands
+  # Volume must be at least this multiple of the 20-bar average to confirm breakout
+  volume_multiplier: 1.5
+  # SL = entry - (ATR * this multiplier)
+  atr_mult_sl: 2.0
+  # TP = entry + (ATR * this multiplier)
+  atr_mult_tp: 4.0
